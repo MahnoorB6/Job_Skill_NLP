@@ -1,0 +1,9 @@
+pandas==3.0.5
+pyarrow==26.0.0
+numpy==2.5.2
+spacy==3.8.18
+nltk==3.10.4
+scikit-learn==1.5.2
+matplotlib==3.11.2
+notebook==7.6.3
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
