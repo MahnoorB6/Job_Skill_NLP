@@ -6,3 +6,5 @@ venv/
 data/temp_model_files/
 data/raw/
 data/processed/
+# Large fastText subword vectors
+models/*.npy

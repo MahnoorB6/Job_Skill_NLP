@@ -154,3 +154,76 @@ The dataset files are not included in this repository. To reproduce the preproce
 The cleaned dataset will be generated in `data/processed/`.
 
 The preprocessing code is available in the `src/` directory, and the required dependencies are listed in `requirements.txt`.
+
+## Assignment 2 — Word Representations
+
+### Overview
+
+This phase implements count-based and learned word representations using the cleaned job-description dataset from Assignment 1.
+
+### Dataset
+
+- Documents: 1,167
+- Total tokens: 613,180
+- Unique words: 26,485
+- Input column: `cleaned_description`
+
+### Implemented Techniques
+
+**Part A — Count-Based Representations**
+- Bag of Words (BoW)
+- TF-IDF
+- Unigrams, bigrams and trigrams
+- Manual TF-IDF and bigram verification
+
+**Part B — Learned Word Embeddings**
+- Word2Vec CBOW
+- Word2Vec Skip-gram
+- fastText
+- Out-of-vocabulary word demonstration
+
+**Part C — Evaluation**
+- Most similar words
+- Cosine similarity
+- Word analogy
+- Count-based versus learned representation comparison
+
+**Part D — Model Packaging**
+- Saved TF-IDF vectorizer
+- Saved CBOW, Skip-gram and fastText models
+- Reusable document-vectorization interface in `src/vectorizer.py`
+
+### Installation
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+
+### Running Assignment 2
+
+1. Prepare the cleaned dataset using the Assignment 1 preprocessing pipeline.
+2. Open `notebooks/assignment_2_word_representations.ipynb`.
+3. Run the notebook cells in order.
+4. Save the fitted vectorizer and embedding models.
+5. Test the reusable document-vectorization interface.
+
+### Saved Models
+
+The `models/` directory contains the TF-IDF vectorizer and the three trained embedding models. These models can be loaded without retraining.
+
+### Report
+
+The Assignment 2 report is available in:
+
+`reports/NLP_Assignment_2_Report.pdf`
+
+### Team Contributions
+
+**Emaan Abbas:** Bag of Words, TF-IDF, N-grams, manual calculations, and corresponding documentation.
+
+**Mahnoor Bhatti:** CBOW, Skip-gram, fastText, similarity experiments, analogy experiments, and corresponding documentation.
+
+Both members contributed to integration, testing, and final submission.
