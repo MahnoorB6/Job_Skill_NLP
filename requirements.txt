@@ -8,3 +8,4 @@ matplotlib
 notebook
 gensim
 ipykernel
+joblib
